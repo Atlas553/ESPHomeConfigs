@@ -137,7 +137,7 @@ binary_sensor:
         condition:
           switch.is_on: presence_light
         then:
-          - light.turn_on: led
+#          - light.turn_on: led
 
   - platform: gpio
     pin:
@@ -220,7 +220,7 @@ switch:
         condition:
           binary_sensor.is_on: occupancy
         then:
-          - light.turn_on: led
+#          - light.turn_on: led
     on_turn_off:
       - light.turn_off: led
 
